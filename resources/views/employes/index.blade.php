@@ -29,6 +29,10 @@
                                 <th>Fullname</th>
                                 <th>Departement</th>
                                 <th>Hired</th>
+                                <th>email</th>
+                                <th>birthdate</th>
+                                <th>salary</th>
+
                                 <th></th>
                             </tr>
                         </thead>
@@ -39,6 +43,9 @@
                                     <td>{{$employe->fullname}}</td>
                                     <td>{{$employe->depart}}</td>
                                     <td>{{$employe->hire_date}}</td>
+                                    <td>{{$employe->email}}</td>
+                                    <td>{{$employe->birthdate}}</td>
+                                    <td>{{$employe->salary}}</td>
                                     <td class="d-flex justify-content-center align-items-center">
                                         <a href="{{route("employes.show",$employe->registration_number)}}"
                                             class="btn btn-sm btn-primary">

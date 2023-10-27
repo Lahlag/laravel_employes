@@ -45,13 +45,14 @@ return [
     |
     */
 
-    'logo' => '<b>Employes</b>',
+    'logo' => '<b>Rank up</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'Employes Management System',
 
+    
     /*
     |--------------------------------------------------------------------------
     | User Menu
@@ -245,6 +246,97 @@ return [
                     'text' => 'Create',
                     'url'  => 'admin/employes/create',
                     'icon' => 'fas fa-fw fa-user-plus',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Conges',
+            'icon' => 'far fa-calendar',
+            'submenu' => [
+                [
+                    'text' => 'Liste des Demandes',
+                    'url'  => 'admin/conges',
+                    'icon' => 'far fa-calendar',
+                ],
+                [
+                    'text' => 'Faire une Demande',
+                    'url'  => 'admin/conges/create',
+                    'icon' => 'far fa-calendar-plus',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Suivi des Performances',
+            'icon' => 'fas fa-fw fa-chart-line',
+            'submenu' => [
+                [
+                    'text' => 'Accomplissement des Tâches et Projets',
+                    'url'  => 'admin/accomplissements', // URL pour suivre l'accomplissement des tâches et projets
+                    'icon' => 'fas fa-fw fa-tasks', // Icône pour l'accomplissement des tâches et projets
+                    'submenu' => [
+                        [
+                            'text' => 'Créer une Tâche',
+                            'url'  => 'admin/accomplissements/create', // URL pour créer une nouvelle tâche
+                            'icon' => 'fas fa-fw fa-plus-circle', // Icône pour créer une tâche
+                        ],
+                        [
+                            'text' => 'Suivi des Tâches',
+                            'url'  => 'admin/accomplissements', // URL pour suivre les tâches existantes
+                            'icon' => 'fas fa-fw fa-list', // Icône pour le suivi des tâches
+                        ],
+                    ],
+                ],
+        
+                [
+                    'text' => 'Absences',
+                    'url'  => 'admin/absences',
+                    'icon' => 'fas fa-fw fa-calendar-times',
+                    'submenu' => [
+                        [
+                            'text' => 'Liste des Absences',
+                            'url'  => 'admin/absences',
+                            'icon' => 'fas fa-fw fa-list',
+                        ],
+                        [
+                            'text' => 'Ajouter une Absence',
+                            'url'  => 'admin/absences/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+                ],
+        
+                [
+                    'text' => 'Retards',
+                    'url'  => 'admin/retards', // URL pour suivre les retards
+                    'icon' => 'fas fa-fw fa-clock', // Icône pour les retards
+                    'submenu' => [
+                        [
+                            'text' => 'Liste des Retards',
+                            'url'  => 'admin/retards',
+                            'icon' => 'fas fa-fw fa-list',
+                        ],
+                        [
+                            'text' => 'Ajouter un Retard',
+                            'url'  => 'admin/retards/create',
+                            'icon' => 'fas fa-fw fa-plus-circle',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'text' => 'Reporting et Statistiques',
+            'icon' => 'fas fa-fw fa-chart-bar', // Icône pour les rapports et les statistiques
+            'submenu' => [
+                [
+                    'text' => 'Rapports personnalisés',
+                    'url'  => 'admin/reports', // URL pour les rapports personnalisés
+                    'icon' => 'fas fa-fw fa-file-alt', // Icône pour les rapports personnalisés
+                ],
+                [
+                    'text' => 'Statistiques RH',
+                    'url'  => 'admin/statistics', // URL pour les statistiques RH
+                    'icon' => 'fas fa-fw fa-chart-pie', // Icône pour les statistiques RH
                 ],
             ],
         ],

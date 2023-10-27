@@ -13,67 +13,83 @@
                     </h3>
                 </div>
                 <div class="card-body">
-                    <div class="form-group row mb-0">
-                        <div class="col-md-12">
-                            <a href="{{route('work.vacation',$employe->registration_number)}}"
-                                class="btn btn-outline-dark">
-                                {{ __('Vacation request') }}
-                            </a>
-                            <a href="{{route('work.certificate',$employe->registration_number)}}"
-                                class="btn btn-outline-danger">
-                                {{ __('Work certificate') }}
-                            </a>
+                    
+                        <div class="form-group row mb-0">
+                            <div class="col-md-12">
+                                <a href="{{route('work.vacation',$employe->registration_number)}}" class="btn btn-outline-dark">
+                                    {{ __('Vacation request') }}
+                                </a>
+                                <a href="{{route('work.certificate',$employe->registration_number)}}" class="btn btn-outline-danger">
+                                    {{ __('Work certificate') }}
+                                </a>
+  
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Full Name</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->fullname}}
+                        <hr>
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Full Name</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->fullname}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Registration Number</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->registration_number}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Registration Number</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->registration_number}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Departement</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->depart}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Email</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->email}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Hired Since</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->hire_date}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Departement</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->depart}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Phone</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->phone}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Hired Since</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->hire_date}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">Address</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->address}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Birthdate</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->birthdate}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="fullname" class="form-label fw-bold">City</label>
-                        <div class="border border-secondary rounded p-2">
-                            {{$employe->city}}
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Phone</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->phone}}
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group mb-3">
+                            <label for "address" class="form-label fw-bold">Address</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->address}}
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">City</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->city}}
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="fullname" class="form-label fw-bold">Salary</label>
+                            <div class="border border-secondary rounded p-2">
+                                {{$employe->salary}}
+                            </div>
+                        </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
-
-
-

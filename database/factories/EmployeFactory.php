@@ -25,11 +25,14 @@ class EmployeFactory extends Factory
             //
             'registration_number' => $this->faker->randomNumber(9, true),
             'fullname' => $this->faker->name(),
+            'email' => $this->faker->unique()->safeEmail(),
             'depart' => $this->faker->word(),
+            'birthdate' => $this->faker->date(),
             'hire_date' => $this->faker->date(),
             'phone' => $this->faker->randomNumber(9, true),
             'address' => $this->faker->address(),
             'city' => $this->faker->state(),
+            'salary' => $this->faker->randomFloat(2, 30000, 90000),
         ];
     }
 }

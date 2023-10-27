@@ -48,7 +48,8 @@ class EmployesController extends Controller
             'hire_date' => 'required',
             'city' => 'required',
             'phone' => 'required|numeric',
-            'address' => 'required'
+            'address' => 'required',
+            'salary' => 'required'
         ]);
         $data = $request->except(['_token']);
         Employe::create($data);
@@ -105,7 +106,9 @@ class EmployesController extends Controller
             'hire_date' => 'required',
             'city' => 'required',
             'phone' => 'required|numeric',
-            'address' => 'required'
+            'address' => 'required',
+            'address' => 'required',
+
         ]);
         $data = $request->except(['_token', '_method']);
         $employe->update($data);

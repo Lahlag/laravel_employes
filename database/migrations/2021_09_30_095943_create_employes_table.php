@@ -17,11 +17,14 @@ class CreateEmployesTable extends Migration
             $table->id();
             $table->string('registration_number');
             $table->string('fullname');
+            $table->string('email')->unique();
             $table->string('depart');
+            $table->date('birthdate');
             $table->date('hire_date');
             $table->integer('phone');
             $table->string('address');
             $table->string('city');
+            $table->decimal('salary', 10, 2);
             $table->timestamps();
         });
     }

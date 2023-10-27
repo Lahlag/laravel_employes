@@ -12,6 +12,28 @@ class Employe extends Model
     [
         "registration_number", "fullname",
         "depart", "hire_date",
-        "city", "address", "phone"
+        "city", "address", "phone",'email','salary',"birthdate"
     ];
+    
+
+    public function absences()
+    {
+        return $this->hasMany(Absence::class);
+    }
+
+    public function retards()
+    {
+        return $this->hasMany(Retard::class);
+    }
+
+    public function accomplissements()
+    {
+        return $this->hasMany(Accomplissement::class);
+    }
+
+    public function conges()
+    {
+        return $this->hasMany(Conge::class);
+    }
 }
+

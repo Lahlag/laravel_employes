@@ -29,12 +29,20 @@
                             <input type="text" name="registration_number" value="{{old("registration_number")}}"  placeholder="Registration Number" class="form-control">
                         </div>
                         <div class="form-group mb-3">
+                            <label class="form-label fw-bold" for="registration_number">email</label>
+                            <input type="text" name="email" value="{{old("email")}}"  placeholder="email" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
                             <label class="form-label fw-bold" for="depart">Departement</label>
                             <input type="text" class="form-control" value="{{old("depart")}}"  name="depart" placeholder="Departement">
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label fw-bold" for="hire_date">Hiring Date</label>
                             <input type="date" class="form-control" value="{{old("hire_date")}}"  placeholder="Hiring Date" name="hire_date">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold" for="hire_date">birthdate</label>
+                            <input type="date" class="form-control" value="{{old("birthdate")}}"  placeholder="birthdate" name="birthdate">
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label fw-bold" for="phone">Phone</label>
@@ -47,6 +55,10 @@
                         <div class="form-group mb-3">
                             <label class="form-label fw-bold" for="city">City</label>
                             <input type="text" class="form-control" value="{{old("city")}}"  placeholder="City" name="city">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold" for="salary">salary</label>
+                            <input type="text" class="form-control" value="{{old("salary")}}"  placeholder="salary" name="salary">
                         </div>
                         <div class="form-group row mb-0">
                             <div class="col-md-8">
